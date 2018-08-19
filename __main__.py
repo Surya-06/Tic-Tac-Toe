@@ -21,7 +21,7 @@ game_outcome = None
 
 while not QUIT:
 
-    game_outcome = square_methods.game_outcome(grid)
+    game_outcome = square_methods.game_outcome(grid,bot_grid)
 
     if game_complete or game_outcome == 'x' or game_outcome == 'o':
         QUIT = True
