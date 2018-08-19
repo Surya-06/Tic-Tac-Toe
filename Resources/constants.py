@@ -25,7 +25,7 @@ INDICES = {(0, 0): 0, (0, 1): 3, (0, 2): 6, (1, 0): 1, (1, 1): 4, (1, 2): 7, (2,
 
 DEBUG_ENABLED = True
 
-MODEL_FILENAME = 'model.sav'
+MODEL_FILENAME = 'Resources/model.sav'
 MODEL_RAW_DATA = 'Resources/tic-tac-toe.data'
 
 FONT_COLOR = (0, 255, 0)

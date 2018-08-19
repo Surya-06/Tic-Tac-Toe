@@ -14,16 +14,12 @@ class bot:
     def __init__(self):
         if os.path.isfile(constants.MODEL_FILENAME):
             self.prev_model_exists = True
+            self.load_model()
         if not self.prev_model_exists:
             self.prev_model_exists = self.build_classifier()
 
-    def check_model_valid(self):
-        if self.model is not None:
-            return True
-        else:
-            return self.build_classifier()
-
     def build_classifier(self):
+        print("bot_gameplay.py - Building classifier from scratch")
         data = open(constants.MODEL_RAW_DATA)
         data_values = data.readlines()
         x_values = []
@@ -41,15 +37,12 @@ class bot:
             for j in range(len(x_values[i])):
                 if x_values[i][j] == 'b':
                     x_values[i][j] = None
-        x = 1
-        o = 0
-
         for i in range(len(x_values)):
             for j in range(len(x_values[i])):
                 if x_values[i][j] == 'x':
-                    x_values[i][j] = x
+                    x_values[i][j] = self.x
                 elif x_values[i][j] == 'o':
-                    x_values[i][j] = o
+                    x_values[i][j] = self.o
                 elif x_values[i][j] is None:
                     # print(x_values[i][j])
                     x_values[i][j] = -1
@@ -57,9 +50,9 @@ class bot:
         for j in range(len(y_values)):
             # print(y_values[j])
             if y_values[j] == 'x':
-                y_values[j] = x
+                y_values[j] = self.x
             elif y_values[j] == 'o':
-                y_values[j] = o
+                y_values[j] = self.o
 
         x_values = np.array(x_values)
         y_values = np.array(y_values)
@@ -73,8 +66,15 @@ class bot:
         return True
 
     def update_model(self, example, outcome):
-        self.check_model_valid()
-        example = [example]
+        if outcome == 'x':
+            outcome = self.x
+        elif outcome == 'y':
+            outcome = self.o
+        else:
+            outcome = self.x
+        outcome = [outcome]
+        example = self.convert_input(example)
+        example = np.array([example])
         self.model.partial_fit(example, outcome)
         return True
 
@@ -87,7 +87,6 @@ class bot:
         return value
 
     def return_prediction(self, init_input):
-        self.check_model_valid()
         value = [x for x in init_input]
         value = self.convert_input(value)
         temp_array = [value]
@@ -102,9 +101,10 @@ class bot:
 
     def load_model(self):
         if self.prev_model_exists:
+            print("bot_gameplay.py - loaded previous model from file")
             self.model = pickle.load(open(constants.MODEL_FILENAME, 'rb'))
         else:
             self.build_classifier()
 
     def save_model(self):
-        pickle.dump(self.model, constants.MODEL_FILENAME, 'wb')
+        pickle.dump(self.model, open (constants.MODEL_FILENAME, 'wb'))

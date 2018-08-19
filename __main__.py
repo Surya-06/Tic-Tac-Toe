@@ -134,3 +134,8 @@ while not QUIT:
         if event.type == pygame.QUIT:
             QUIT = True
     pygame.display.flip()
+
+print("main.py -- updating model with outcome of current game ")
+bot.update_model(bot_grid,game_outcome)
+bot.save_model()
+print("main.py -- updated the model with latest outcome")

@@ -33,23 +33,31 @@ def game_outcome(squares):
     print()
     """
     # ROW CHECKS
-    if squares[0].symbol_value == squares[1].symbol_value == squares[2].symbol_value and squares[0] is not None:
+    if squares[0].symbol_value == squares[1].symbol_value == squares[2].symbol_value and squares[0].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[0].symbol_value
-    if squares[3].symbol_value == squares[4].symbol_value == squares[5].symbol_value and squares[3] is not None:
+    if squares[3].symbol_value == squares[4].symbol_value == squares[5].symbol_value and squares[3].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[3].symbol_value
-    if squares[6].symbol_value == squares[7].symbol_value == squares[8].symbol_value and squares[6] is not None:
+    if squares[6].symbol_value == squares[7].symbol_value == squares[8].symbol_value and squares[6].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[6].symbol_value
     # COLUMN CHECKS
-    if squares[0].symbol_value == squares[3].symbol_value == squares[6].symbol_value and squares[0] is not None:
+    if squares[0].symbol_value == squares[3].symbol_value == squares[6].symbol_value and squares[0].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[0].symbol_value
-    if squares[1].symbol_value == squares[4].symbol_value == squares[4].symbol_value and squares[1] is not None:
+    if squares[1].symbol_value == squares[4].symbol_value == squares[4].symbol_value and squares[1].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[1].symbol_value
-    if squares[2].symbol_value == squares[5].symbol_value == squares[8].symbol_value and squares[2] is not None:
+    if squares[2].symbol_value == squares[5].symbol_value == squares[8].symbol_value and squares[2].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[2].symbol_value
     # DIAGONAL CHECKS
-    if squares[0].symbol_value == squares[1].symbol_value == squares[8].symbol_value and squares[0] is not None:
+    if squares[0].symbol_value == squares[4].symbol_value == squares[8].symbol_value and squares[0].symbol_value is not None:
+        print("completed because of indices 0,1,2")
         return squares[0].symbol_value
-    if squares[2].symbol_value == squares[4].symbol_value == squares[6].symbol_value and squares[2] is not None:
+    if squares[2].symbol_value == squares[4].symbol_value == squares[6].symbol_value and squares[2].symbol_value is not None:
+        print("completed because of indices 2,4,6 ")
         return squares[2].symbol_value
     return None
 
