@@ -54,12 +54,12 @@ while not QUIT:
             if current_symbol is None:
                 square_value.symbol_value = 'x'
             original_values = (square_methods.range_finder(pos[0]), square_methods.range_finder(pos[1]))
-            bot_grid[constants.LINEAR_GRID[original_values]] = 'x'
+            bot_grid[constants.INDICES[original_values]] = 'x'
 
             # DEBUG STATEMENTS
             print("original values are " , original_values)
             print("co-ordinates are " , pos)
-            print("Bot grid index is " , constants.LINEAR_GRID[original_values])
+            print("Bot grid index is " , constants.INDICES[original_values])
             square_methods.find_block(grid,pos[0],pos[1])
 
             player_turn = False
@@ -76,28 +76,32 @@ while not QUIT:
             game_complete = True
             break
         else:
-            temp = bot_grid
+            temp = [j for j in bot_grid]
             o_wins = False
             index = -1
             for j in options:
                 temp[j] = 'o'
                 sample_outcome = bot.return_prediction(temp)
+                #DEBUG
+                print("main - sample outcome is " , sample_outcome)
                 if sample_outcome == 'o':
                     o_wins = True
                     index = j
                     break
                 else:
-                    temp = bot_grid
+                    print("Resetting grid")
+                    temp = [j for j in bot_grid]
             # DEBUG STATEMENTS
-            print("Index selected by computer is " , index )
-            print("Grid value of index is " , debug_methods.print_index(index))
             print ( "o_wins value is " , o_wins)
             if o_wins:
+                print("Index selected by computer is ", index)
+                print("Grid value of index is ", debug_methods.print_index(index))
                 required_block = grid[index]
                 required_block.symbol_value = 'o'
             else:
                 required_block = grid[options[0]]
                 required_block.symbol_value = 'o'
+            bot_grid = temp
         player_turn = True
 
     if debug_pressed and constants.DEBUG_ENABLED:
