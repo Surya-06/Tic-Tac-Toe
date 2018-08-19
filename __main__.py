@@ -57,10 +57,10 @@ while not QUIT:
             bot_grid[constants.INDICES[original_values]] = 'x'
 
             # DEBUG STATEMENTS
-            print("original values are " , original_values)
-            print("co-ordinates are " , pos)
-            print("Bot grid index is " , constants.INDICES[original_values])
-            square_methods.find_block(grid,pos[0],pos[1])
+            print("original values are ", original_values)
+            print("co-ordinates are ", pos)
+            print("Bot grid index is ", constants.INDICES[original_values])
+            square_methods.find_block(grid, pos[0], pos[1])
 
             player_turn = False
             modified_now = True
@@ -82,35 +82,33 @@ while not QUIT:
             for j in options:
                 temp[j] = 'o'
                 sample_outcome = bot.return_prediction(temp)
-                #DEBUG
-                print("main - sample outcome is " , sample_outcome)
+                # DEBUG
+                print("main - sample outcome for ", temp, " is ", sample_outcome)
                 if sample_outcome == 'o':
                     o_wins = True
                     index = j
                     break
                 else:
-                    print("Resetting grid")
                     temp = [j for j in bot_grid]
-            # DEBUG STATEMENTS
-            print ( "o_wins value is " , o_wins)
             if o_wins:
                 print("Index selected by computer is ", index)
-                print("Grid value of index is ", debug_methods.print_index(index))
                 required_block = grid[index]
                 required_block.symbol_value = 'o'
             else:
+                print("NO INDEX FOUND ", options[0])
                 required_block = grid[options[0]]
                 required_block.symbol_value = 'o'
+                temp[options[0]] = 'o'
             bot_grid = temp
         player_turn = True
 
     if debug_pressed and constants.DEBUG_ENABLED:
 
-        print("bot grid values are " )
+        print("bot grid values are ")
         print(bot_grid)
         print("squares values are ")
         for j in grid:
-            print(j.symbol_value,end=' ')
+            print(j.symbol_value, end=' ')
         print()
 
         debug_pressed = not debug_pressed
@@ -119,4 +117,20 @@ while not QUIT:
     pygame.display.flip()
 
 print("GAME COMPLETE ")
-print( "OUTCOME : " , game_outcome)
+print("OUTCOME : ", game_outcome)
+
+QUIT = False
+text_surface = ''
+if game_outcome == 'x':
+    text_surface = constants.text_surface_creator('Congratulations Player : X ')
+elif game_outcome == 'o':
+    text_surface = constants.text_surface_creator('Congratulations Player : O ')
+else:
+    text_surface = constants.text_surface_creator('Game ended in a Draw')
+while not QUIT:
+    screen.fill((0, 0, 0))
+    screen.blit(text_surface, (0, 0))
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            QUIT = True
+    pygame.display.flip()

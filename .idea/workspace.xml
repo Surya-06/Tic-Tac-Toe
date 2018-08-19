@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e85d47-d81b-42f3-986c-0a3e986d288c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/bot_gameplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/bot_gameplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/square_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/square_methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
     </list>
@@ -36,13 +36,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="py" value="10813" />
+          <entry key="py" value="11624" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="10813" />
+          <entry key="Python" value="11624" />
         </counts>
       </usages-collector>
     </session>
@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state relative-caret-position="175">
+              <caret line="133" column="37" lean-forward="true" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
               <folding>
                 <element signature="e#34#47#0" expanded="true" />
               </folding>
@@ -61,18 +61,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/bot_gameplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+            <state relative-caret-position="1450">
+              <caret line="103" column="34" lean-forward="true" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1534670708826" expanded="true" signature="120:193" ph="..." />
-                <marker date="1534670708826" expanded="true" signature="212:676" ph="..." />
-                <marker date="1534670708826" expanded="true" signature="441:563" ph="..." />
-                <marker date="1534670708826" expanded="true" signature="2379:2574" ph="..." />
-                <marker date="1534670708826" expanded="true" signature="2897:3213" ph="..." />
+                <marker date="1534672581999" expanded="true" signature="120:193" ph="..." />
+                <marker date="1534672581999" expanded="true" signature="212:676" ph="..." />
+                <marker date="1534672581999" expanded="true" signature="441:563" ph="..." />
+                <marker date="1534672581999" expanded="true" signature="2379:2574" ph="..." />
+                <marker date="1534672581999" expanded="true" signature="2800:3015" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/debug_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
               <folding>
                 <marker date="1534665750279" expanded="true" signature="92:97" ph="..." />
                 <marker date="1534665750279" expanded="true" signature="437:472" ph="..." />
@@ -104,11 +104,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="17">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <folding>
+                <marker date="1534673711852" expanded="true" signature="904:909" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,13 +119,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/square_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <marker date="1534669259567" expanded="true" signature="720:725" ph="..." />
-                <marker date="1534669259567" expanded="true" signature="1470:2747" ph="..." />
-                <marker date="1534669259567" expanded="true" signature="2772:2777" ph="..." />
+                <marker date="1534672322967" expanded="true" signature="802:2079" ph="..." />
+                <marker date="1534672322967" expanded="true" signature="2104:2109" ph="..." />
               </folding>
             </state>
           </provider>
@@ -140,6 +142,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>constants.LINEAR_GRID</find>
+      <find>bot_grid</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -153,9 +156,9 @@
         <option value="$PROJECT_DIR$/Classes/square.py" />
         <option value="$PROJECT_DIR$/Classes/debug_methods.py" />
         <option value="$PROJECT_DIR$/Classes/square_methods.py" />
-        <option value="$PROJECT_DIR$/Resources/constants.py" />
-        <option value="$PROJECT_DIR$/__main__.py" />
         <option value="$PROJECT_DIR$/Classes/bot_gameplay.py" />
+        <option value="$PROJECT_DIR$/__main__.py" />
+        <option value="$PROJECT_DIR$/Resources/constants.py" />
       </list>
     </option>
   </component>
@@ -280,6 +283,17 @@
     <entry file="file://$PROJECT_DIR$/Classes/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/debug_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <marker date="1534665750279" expanded="true" signature="92:97" ph="..." />
+            <marker date="1534665750279" expanded="true" signature="437:472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/square.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -293,56 +307,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/square_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1534669259567" expanded="true" signature="720:725" ph="..." />
-            <marker date="1534669259567" expanded="true" signature="1470:2747" ph="..." />
-            <marker date="1534669259567" expanded="true" signature="2772:2777" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/debug_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <marker date="1534665750279" expanded="true" signature="92:97" ph="..." />
-            <marker date="1534665750279" expanded="true" signature="437:472" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="91" column="43" lean-forward="true" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-          <folding>
-            <element signature="e#34#47#0" expanded="true" />
+            <marker date="1534672322967" expanded="true" signature="802:2079" ph="..." />
+            <marker date="1534672322967" expanded="true" signature="2104:2109" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/bot_gameplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+        <state relative-caret-position="1450">
+          <caret line="103" column="34" lean-forward="true" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1534670708826" expanded="true" signature="120:193" ph="..." />
-            <marker date="1534670708826" expanded="true" signature="212:676" ph="..." />
-            <marker date="1534670708826" expanded="true" signature="441:563" ph="..." />
-            <marker date="1534670708826" expanded="true" signature="2379:2574" ph="..." />
-            <marker date="1534670708826" expanded="true" signature="2897:3213" ph="..." />
+            <marker date="1534672581999" expanded="true" signature="120:193" ph="..." />
+            <marker date="1534672581999" expanded="true" signature="212:676" ph="..." />
+            <marker date="1534672581999" expanded="true" signature="441:563" ph="..." />
+            <marker date="1534672581999" expanded="true" signature="2379:2574" ph="..." />
+            <marker date="1534672581999" expanded="true" signature="2800:3015" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="133" column="37" lean-forward="true" selection-start-line="133" selection-start-column="37" selection-end-line="133" selection-end-column="37" />
+          <folding>
+            <element signature="e#34#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <marker date="1534673711852" expanded="true" signature="904:909" ph="..." />
           </folding>
         </state>
       </provider>

@@ -22,37 +22,16 @@ def range_finder(value):
 
 def find_block(squares, x, y):
     i_value, j_value = range_finder(x), range_finder(y)
-    # DEBUG STATEMENT
-    print(constants.INDICES[(i_value, j_value)])
     return squares[constants.INDICES[(i_value, j_value)]]
 
 
-"""
-def game_state(grid):
-    # ROW CHECKS -- ( MANUAL -- HAD TIME )
-    if grid[0][0] == grid[0][1] == grid[0][2]:
-        return grid[0][0]
-    elif grid[1][0] == grid[1][1] == grid[1][2]:
-        return grid[1][0]
-    elif grid[2][0] == grid[2][1] == grid[2][2]:
-        return grid[2][0]
-    # COLUMN CHECKS
-    elif grid[0][0] == grid[1][0] == grid[2][0]:
-        return grid[0][0]
-    elif grid[0][1] == grid[1][1] == grid[2][1]:
-        return grid[0][1]
-    elif grid[0][2] == grid[1][2] == grid[2][2]:
-        return grid[0][2]
-    # DIAGONAL CHECKS
-    elif grid[0][0] == grid[1][1] == grid[2][2]:
-        return grid[0][0]
-    elif grid[0][2] == grid[1][1] == grid[2][0]:
-        return grid[0][2]
-    return False
-"""
-
-
 def game_outcome(squares):
+    """
+    print ( "current value of squares is " , )
+    for i in squares:
+        print(i.symbol_value,end=' ')
+    print()
+    """
     # ROW CHECKS
     if squares[0].symbol_value == squares[1].symbol_value == squares[2].symbol_value and squares[0] is not None:
         return squares[0].symbol_value
@@ -77,6 +56,8 @@ def game_outcome(squares):
 
 def find_available(grid):
     options = []
+    print("In find available")
+    print(grid)
     for i in range(len(grid)):
         if grid[i] == -1:
             options.append(i)

@@ -86,21 +86,18 @@ class bot:
                 value[i] = self.o
         return value
 
-    def return_prediction(self, value):
+    def return_prediction(self, init_input):
         self.check_model_valid()
-        print("bot_gameplay.py - input value before conversion is " , value )
+        value = [x for x in init_input]
         value = self.convert_input(value)
-        print("bot_gameplay.py - Given input value : " , value)
         temp_array = [value]
         temp_array = np.array(temp_array)
         prediction = self.model.predict(temp_array)
-        print("bot_gameplay.py - Prediction : " , prediction)
         if prediction[0] == self.x:
             return 'x'
         elif prediction[0] == self.o:
             return 'o'
         else:
-            print("NOTHING PREDICTED")
             return 'o'
 
     def load_model(self):
